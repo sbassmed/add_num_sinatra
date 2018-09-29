@@ -8,7 +8,7 @@ get '/' do
 end
 
 get '/suma' do
-  @count= params[:suma].to_i + 1
+  @suma = params[:suma].to_i + 1
   redirect "/?item=#{@suma}"
   erb :index
 end
